@@ -11,4 +11,4 @@ http://cslabcms.nju.edu.cn/problem_solving/images/c/cc/The_C_Programming_Languag
 
 
 ## Video
-https://youtu.be/87SH2Cn0s9A?t=1438
+https://youtu.be/87SH2Cn0s9A?t=1635
