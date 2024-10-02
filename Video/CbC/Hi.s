@@ -22,12 +22,15 @@ _main:                                  ; @main
 	ldr	q0, [x9]
 	add	x8, sp, #16
 	str	q0, [sp, #16]
-	ldur	x9, [x9, #14]
-	stur	x9, [x8, #14]
+	ldur	x9, [x9, #15]
+	stur	x9, [x8, #15]
 	mov	x9, sp
 	str	x8, [x9]
 	adrp	x0, l_.str@PAGE
 	add	x0, x0, l_.str@PAGEOFF
+	bl	_printf
+	adrp	x0, l_.str.1@PAGE
+	add	x0, x0, l_.str.1@PAGEOFF
 	bl	_printf
 	ldur	x9, [x29, #-8]
 	adrp	x8, ___stack_chk_guard@GOTPAGE
@@ -48,9 +51,12 @@ LBB0_2:
                                         ; -- End function
 	.section	__TEXT,__cstring,cstring_literals
 l___const.main.c:                       ; @__const.main.c
-	.asciz	"From sea to shining C"
+	.asciz	"From sea to shining \tC"
 
 l_.str:                                 ; @.str
-	.asciz	"The hidden text is: %s. "
+	.asciz	"The hidden text is:\t%s. \n"
+
+l_.str.1:                               ; @.str.1
+	.asciz	"The End\n"
 
 .subsections_via_symbols
