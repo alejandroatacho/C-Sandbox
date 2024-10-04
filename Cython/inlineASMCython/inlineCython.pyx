@@ -1,7 +1,7 @@
 cdef extern from "inline_asm.h":
     int add_in_asm_arm(int a, int b)  # Declare the external function
 
-cdef extern from "stdio.h":
+cdef extern from "stdio.h": # default C library for input/output declared here
     int printf(const char *format, ...)
 
 cpdef void test_inline_assembly():
