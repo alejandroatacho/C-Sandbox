@@ -4,6 +4,6 @@ import sysconfig
 
 setup(
     name='Compile Tester',
-    ext_modules=cythonize("main.pyx"),
+    ext_modules=cythonize("test.pyx"),
     include_dirs=[sysconfig.get_paths()["include"]],
 )

@@ -292,3 +292,4 @@ MANIFEST
 .vscode
 Assembly/sum
 Cython/*.c
+Cython/*/*.c
