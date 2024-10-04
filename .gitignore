@@ -1,3 +1,10 @@
+# Hina .gitignore
+Assembly/sum
+Cython/*.c
+Cython/*/*.c
+Cython/*.s
+Cython/*/*.s
+
 venv/*
 .DS_Store
 # Prerequisites
@@ -290,6 +297,3 @@ MANIFEST
 
 # Visual Studio Code files
 .vscode
-Assembly/sum
-Cython/*.c
-Cython/*/*.c
