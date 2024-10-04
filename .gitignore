@@ -291,3 +291,4 @@ MANIFEST
 # Visual Studio Code files
 .vscode
 Assembly/sum
+Cython/*.c
